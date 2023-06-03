@@ -10,14 +10,15 @@ import {
   SunburstPage,
   TreemapPage,
   Group11Page,
-  Group5Page
+  Group5Page,
+  ImportPage,
 } from "./pages";
 import {
   feedbackLoader,
   sunburstLoader,
   treeMapLoader,
   group11Loader,
-  group5Loader
+  group5Loader,
 } from "./loaders";
 import { Container } from "./layout";
 
@@ -56,12 +57,8 @@ function App() {
           element={<TreemapPage />}
           loader={treeMapLoader}
         />
-        <Route
-          path="/group-5"
-          element={<Group5Page />}
-          loader={group5Loader}
-        />
-
+        <Route path="/group-5" element={<Group5Page />} loader={group5Loader} />
+        <Route path="/import" element={<ImportPage />} />
       </Route>
     )
   );
