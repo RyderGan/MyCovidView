@@ -6,7 +6,8 @@ import {
   testPositiveLoader,
 } from "./feedback";
 import {
-  boxPlotLoader
+  boxPlotLoader, 
+  histogramLoader,
 } from "./distribution"
 import { ChartTabularData } from "@carbon/charts/interfaces";
 
@@ -19,7 +20,9 @@ export const feedbackLoader = (async (): Promise<any> => {
 
 export const distributionLoader = (async (): Promise<any> => {
   const boxPlotData = await boxPlotLoader();
-  return { boxPlotData };
+  const histogramData = await histogramLoader();
+  return { boxPlotData, histogramData };
+
 }) satisfies LoaderFunction;
 
 export const sunburstLoader = (async (): Promise<any> => {
