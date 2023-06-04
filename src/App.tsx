@@ -44,6 +44,16 @@ function App() {
           element={<VaccinationRate />}
           loader={vacRateLoader}
         />
+        <Route
+          path="/sparkline"
+          element={<SparklinePage />}
+          loader={sparklineLoader}
+        />
+        <Route
+          path="/meter"
+          element={<MeterPage />}
+          loader={meterLoader}
+        />
       </Route>
     )
   );
