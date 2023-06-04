@@ -3,3 +3,5 @@ export { default as Feedback } from "./Feedback";
 export { default as SunburstPage } from "./SunburstPage";
 export { default as TreemapPage } from "./TreeMapPage";
 export { default as VaccinationRate } from "./VaccinationRate";
+export { default as SparklinePage } from "./SparklinePage";
+export { default as MeterPage } from "./MeterPage";
