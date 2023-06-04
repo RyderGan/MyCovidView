@@ -162,3 +162,67 @@ export const vacRateLoader = (async (): Promise<ChartTabularData> => {
 
   return data_display;
 }) satisfies LoaderFunction;
+
+export const sparklineLoader = (async (): Promise<any[]> => {
+  const casesData = [
+    {
+      "group": "Dataset 1",
+      "date": 1579910400000,
+      "value": 4
+    },
+    {
+      "group": "Dataset 1",
+      "date": 1595635200000,
+      "value": 23
+    },
+    {
+      "group": "Dataset 1",
+      "date": 1611532800000,
+      "value": 3048
+    },
+    {
+      "group": "Dataset 1",
+      "date": 1627171200000,
+      "value": 17045
+    },
+    {
+      "group": "Dataset 1",
+      "date": 1643068800000,
+      "value": 4066
+    },
+    {
+      "group": "Dataset 1",
+      "date": 1658707200000,
+      "value": 3300
+    },
+    {
+      "group": "Dataset 1",
+      "date": 1674604800000,
+      "value": 132
+    }
+  ];
+
+  return casesData;
+}) satisfies LoaderFunction;
+
+export const meterLoader = (async (): Promise<any[]> => {
+  const vaccData = [
+      {
+        "group": "partial_18_29",
+        "value": 6847921
+      },
+      {
+        "group": "full_18_29",
+        "value": 6784369
+      },
+      {
+        "group": "booster_18_29",
+        "value": 4433972
+      },
+      {
+        "group": "booster2_18_29",
+        "value": 141308
+      }
+  ];
+  return vaccData;
+}) satisfies LoaderFunction;
